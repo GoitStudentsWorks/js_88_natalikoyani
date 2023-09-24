@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_88_natalikoyani/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/js_88_natalikoyani/assets/favorites-fe46b18a.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_88_natalikoyani/assets/header-42c9d17b.js">
+    <link rel="stylesheet" href="/js_88_natalikoyani/assets/header-b21ec689.css">
+  </head>
+  <body>
+    <section class="header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="./index.html" class="link nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./favorites.html" class="link nav-link">Favorites</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="logo-container">
+      <a class="link logo" href="./index.html"
+        ><span class="logo-header">tasty</span>treats.</a
+      >
+    </div>
+    <div class="icon-container">
+      <a
+        class="link shopping-cart"
+        rel="noopener noreferrer"
+        href="tel:+38073000000"
+      >
+        <svg class="cart-icon" width="24" height="24">
+          <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#shopping-cart"></use>
+        </svg>
+      </a>
+      <div class="switch-theme">
+        <input class="switcher" type="checkbox" id="switch-header" />
+        <label class="label-switcher" for="switch-header">Toggle</label>
+      </div>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-icon" width="32" height="32">
+          <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#hamburger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <section class="favorites-hero">
+  <div class="container fav-wrapper js-fav-wrapper">
+    <picture class="js-hero-img hero-img">
+      <!-- Desktop -->
+      <source
+        media="(min-width: 1280px)"
+        srcset="/js_88_natalikoyani/assets/img_desk@1x-5c73a730.webp 1x, /js_88_natalikoyani/assets/img_desk@2x-df1c9cd5.webp 2x"
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="/js_88_natalikoyani/assets/img_desk@1x-eae40d94.jpg 1x, /js_88_natalikoyani/assets/img_desk@2x-90dab545.jpg 2x"
+        type="image/jpg"
+      />
+      <!-- Tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="/js_88_natalikoyani/assets/img_tablet@1x-656ab3a6.webp 1x, /js_88_natalikoyani/assets/img_tablet@2x-0c6c9d59.webp 2x"
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/js_88_natalikoyani/assets/img_tablet@1x-c8e3fc7d.jpg 1x, /js_88_natalikoyani/assets/img_tablet@2x-c200b9f2.jpg 2x"
+        type="image/jpg"
+      />
+      <!-- Mobile -->
+      <source
+        media="(max-width: 767px)"
+        srcset="/js_88_natalikoyani/assets/img_mob@1x-7a56ce63.webp 1x, /js_88_natalikoyani/assets/img_mob@2x-094ab6ee.webp 2x"
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="/js_88_natalikoyani/assets/img_mob@1x-f84cb062.jpg 1x, /js_88_natalikoyani/assets/img_mob@2x-2ac6a3b2.jpg 2x"
+        type="image/jpg"
+      />
+
+      <img src="/js_88_natalikoyani/assets/img_desk@1x-eae40d94.jpg" alt="" />
+    </picture>
+  </div>
+</section>
+<section class="favorites-list-section">
+  <div class="container">
+    <div class="categories-list-container js-categories-container"></div>
+    <ul class="js-list-fav list-fav"></ul>
+  </div>
+</section>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="menu-close-btn" width="32" height="32">
+      <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#x-mobile-menu"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu list">
+    <li class="mobile-menu-item">
+      <a href="./index.html" class="mobile-link">Home</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="./favorites.html" class="mobile-link">Favorites</a>
+    </li>
+  </ul>
+  <div class="switch-theme-hamburger">
+    <input class="switcher" type="checkbox" id="switch-hamburger" />
+    <label class="label-switcher" for="switch-hamburger">Toggle</label>
+  </div>
+</div>
+
+    <!-- visually-hidden -->
+<div class="backdrop-recipe-info visually-hidden js-modal-recipe" data-modal>
+  <div class="modal-container modal-recipe" data-modal-modal-container>
+    <div class="js-create-modal"></div>
+    <button class="close-modal-recipe" type="button" data-modal-close>
+      <svg class="close-modal-recipe-icon" width="20" height="20">
+        <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#x-modal"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_88_natalikoyani/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Treats</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/js_88_natalikoyani/assets/index-c2cc34c8.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_88_natalikoyani/assets/header-42c9d17b.js">
+    <link rel="stylesheet" href="/js_88_natalikoyani/assets/header-b21ec689.css">
+    <link rel="stylesheet" href="/js_88_natalikoyani/assets/index-cfc9f3e6.css">
+  </head>
+  <body>
+    <section class="header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="./index.html" class="link nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./favorites.html" class="link nav-link">Favorites</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="logo-container">
+      <a class="link logo" href="./index.html"
+        ><span class="logo-header">tasty</span>treats.</a
+      >
+    </div>
+    <div class="icon-container">
+      <a
+        class="link shopping-cart"
+        rel="noopener noreferrer"
+        href="tel:+38073000000"
+      >
+        <svg class="cart-icon" width="24" height="24">
+          <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#shopping-cart"></use>
+        </svg>
+      </a>
+      <div class="switch-theme">
+        <input class="switcher" type="checkbox" id="switch-header" />
+        <label class="label-switcher" for="switch-header">Toggle</label>
+      </div>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-icon" width="32" height="32">
+          <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#hamburger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-text-content">
+      <h1 class="hero-title">
+        Learn to Cook
+        <span class="hero-title-span">Tasty Treats'</span> Customizable
+        Masterclass
+      </h1>
+      <p class="hero-desc">
+        TastyTreats - Customize Your Meal with Ingredient Options and
+        Step-by-Step Video Guides.
+      </p>
+      <a href="tel:+380730000000" class="hero-btn">Order now</a>
+    </div>
+    <div class="hero-slider js-hero-slider">
+      <div class="swiper-wrapper"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="main">
+      <div class="container">
+        <div class="main-box">
+          <div class="main-left-part">
+            <div class="left-part">
+  <div class="categories-container">
+    <button class="all-categories-button">All categories</button>
+    <div class="categories-box">
+      <ul class="categories-list"></ul>
+    </div>
+  </div>
+</div>
+
+            <div class="popular-recipes-container">
+  <h2 class="popular-recipe-title">Popular recipes</h2>
+  <div class="popular-recipes-card"></div>
+</div>
+
+          </div>
+          <div class="main-right-part">
+            <div class="right-part">
+  <div class="user-interaction">
+    <div class="user-search-btn">
+      <p class="desc-input">Search</p>
+      <div class="search-elements">
+        <input
+          class="search-input"
+          type="text"
+          name="userSearch"
+          placeholder="Enter Text"
+        />
+        <button type="button" aria-label="search btn" class="search-btn">
+          <svg class="search-svg" width="18px" height="18px">
+            <use class="search-icon" href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="button-reset">
+      <button class="btn-reset" type="button">
+        <svg class="icon-reset" width="16px" height="16px">
+          <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#x-search"></use>
+        </svg>
+        Reset the filter
+      </button>
+    </div>
+  </div>
+</div>
+
+            <ul class="cards-gallery"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- visually-hidden -->
+<div class="backdrop-recipe-info visually-hidden js-modal-recipe" data-modal>
+  <div class="modal-container modal-recipe" data-modal-modal-container>
+    <div class="js-create-modal"></div>
+    <button class="close-modal-recipe" type="button" data-modal-close>
+      <svg class="close-modal-recipe-icon" width="20" height="20">
+        <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#x-modal"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="menu-close-btn" width="32" height="32">
+      <use href="/js_88_natalikoyani/assets/icons-f69d25cf.svg#x-mobile-menu"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu list">
+    <li class="mobile-menu-item">
+      <a href="./index.html" class="mobile-link">Home</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="./favorites.html" class="mobile-link">Favorites</a>
+    </li>
+  </ul>
+  <div class="switch-theme-hamburger">
+    <input class="switcher" type="checkbox" id="switch-hamburger" />
+    <label class="label-switcher" for="switch-hamburger">Toggle</label>
+  </div>
+</div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
